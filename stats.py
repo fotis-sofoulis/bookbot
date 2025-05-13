@@ -18,3 +18,8 @@ def count_char(text: str):
             count_dict[char] += 1
 
     return count_dict
+
+def sorted_count_dict(count_dict:dict):
+    return sorted(count_dict.items(), key=lambda item:item[1], reverse=True)
+
+
